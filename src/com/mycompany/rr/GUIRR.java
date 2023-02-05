@@ -7,6 +7,8 @@ package com.mycompany.rr;
 import java.awt.Color;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -568,7 +570,9 @@ public class GUIRR extends javax.swing.JFrame {
 						controller.ioUsblistRow(i).getWaittingTime(), controller.ioUsblistRow(i).getStatusProcess() };
 				model.addRow(rowData);
 			}
-		}
+		}else{
+            JOptionPane.showMessageDialog(null, "No Process In Job Queue");
+        }
 	}
 
 	private void endIoCdActionPerformed(java.awt.event.ActionEvent evt) {
@@ -596,7 +600,9 @@ public class GUIRR extends javax.swing.JFrame {
 						controller.ioCdlistRow(i).getWaittingTime(), controller.ioCdlistRow(i).getStatusProcess() };
 				model.addRow(rowData);
 			}
-		}
+		}else{
+            JOptionPane.showMessageDialog(null, "No Process In Job Queue");
+        }
 	}
 
 	private void addIoUsbActionPerformed(java.awt.event.ActionEvent evt) {
@@ -624,7 +630,9 @@ public class GUIRR extends javax.swing.JFrame {
 						controller.ioUsblistRow(i).getWaittingTime(), controller.ioUsblistRow(i).getStatusProcess() };
 				model.addRow(rowData);
 			}
-		}
+		}else{
+            JOptionPane.showMessageDialog(null, "No Process In Job Queue");
+        }
 	}
 
 	private void addIoCdActionPerformed(java.awt.event.ActionEvent evt) {
@@ -652,7 +660,9 @@ public class GUIRR extends javax.swing.JFrame {
 						controller.ioCdlistRow(i).getWaittingTime(), controller.ioCdlistRow(i).getStatusProcess() };
 				model.addRow(rowData);
 			}
-		}
+		}else{
+            JOptionPane.showMessageDialog(null, "No Process In Job Queue");
+        }
 	}
 
 	/**
